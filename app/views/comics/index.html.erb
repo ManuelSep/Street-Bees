@@ -1,0 +1,48 @@
+<div class="container">
+  <h1>Marvel Comics</h1>
+  <div class="mb-2">
+    <%= form_with url: comics_path, method: :get, local: true do |form| %>
+      <%= form.text_field :character_name, placeholder: 'Enter character name' %>
+      <%= form.submit 'Search' %>
+    <% end %>
+  </div>
+  <% unless !@character_comics.present? && @character_comics == false %>
+    <% if @character_name.is_a?(Hash) %>
+      <h3><%= @character_name %></h3>
+      <div class="comics-grid">
+        <% @character_comics.each do |comic| %>
+          <div class="comic-item">
+            <h3><%= comic['name'] %></h3>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <p>No comics found for <%= @character_name %>.</p>
+    <% end %>
+  <% else %>
+    <% if @comics['data']['results'].any? %>
+      <div class="comics-grid">
+        <% @comics['data']['results'].each do |comic| %>
+          <div class="comic-item">
+            <h3><%= comic['title'] %></h3>
+            <img src="<%= "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}" %>" alt="<%= comic['title'] %>">
+            <% if Comic.exists?(title: comic['title']) %>
+              <% db_comic = Comic.find_by(title: comic['title']) %>
+              <div>
+                <p>Upvotes: <%= db_comic.upvotes %></p>
+                <%#= button_to 'Upvote', upvote_comic_path(db_comic), method: :post, class: 'btn btn-primary' %>
+                <%= button_to 'Upvote', upvote_comic_path(comic['id'], title: comic['title'], cover_url: "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}"), method: :post %>
+              </div>
+            <% else %>
+              <div>
+                <p>Upvotes: 0</p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <p>No comics found.</p>
+    <% end %>
+  <% end %>
+</div>

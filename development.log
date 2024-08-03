@@ -1,0 +1,156 @@
+I, [2024-08-03T12:59:30.477152 #59345]  INFO -- : Started GET "/" for ::1 at 2024-08-03 12:59:30 +0100
+I, [2024-08-03T12:59:30.478404 #59345]  INFO -- : Processing by ComicsController#index as HTML
+D, [2024-08-03T12:59:30.485128 #59345] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-03T12:59:30.485248 #59345] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+D, [2024-08-03T12:59:30.486461 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Marvel Previews (2017)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.486898 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.488262 #59345] DEBUG -- :   [1m[36mCACHE Comic Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Marvel Previews (2017)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.488616 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.489576 #59345] DEBUG -- :   [1m[36mCACHE Comic Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Marvel Previews (2017)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.489936 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.490999 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #10 (MARVEL KNIGHTS)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.491397 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.492611 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ultimate Spider-Man (2000) #110 (Mark Bagley Variant)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.493344 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.494514 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #12 (SPIDER-MAN)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.494917 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.496172 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "The Stand: American Nightmares HC (Hardcover)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.496589 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.498110 #59345] DEBUG -- :   [1m[36mComic Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #1"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.498574 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.499838 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #14 (FANTASTIC FOUR)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.500233 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.501481 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #9 (THE WOMEN OF MARVEL)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.501884 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.503291 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Hedge Knight II: Sworn Sword (2007) #1 (Yu Variant)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.522066 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.524234 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #11 (X-MEN - AGE OF APOCALYPSE)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.524781 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.526086 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #13 (TEAMS)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.526483 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.527863 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB (Trade Paperback)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.528250 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.529376 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #4"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.529746 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.530859 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Gun Theory (2003) #4"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.531268 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.532698 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Silver Surfer (1987)"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.533083 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.534176 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #3"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.534616 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.535826 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #2"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.536217 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T12:59:30.537521 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Startling Stories: The Incorrigible Hulk (2004) #1"], ["LIMIT", 1]]
+D, [2024-08-03T12:59:30.537893 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+I, [2024-08-03T12:59:30.538734 #59345]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 53.4ms | Allocations: 14891)
+I, [2024-08-03T12:59:30.544190 #59345]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-03T12:59:30.544732 #59345]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 18338)
+I, [2024-08-03T12:59:30.545286 #59345]  INFO -- : Completed 200 OK in 67ms (Views: 57.5ms | ActiveRecord: 2.5ms | Allocations: 21132)
+
+
+I, [2024-08-03T12:59:32.307038 #59345]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-03 12:59:32 +0100
+F, [2024-08-03T12:59:32.308034 #59345] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+I, [2024-08-03T13:02:34.507749 #59345]  INFO -- : Started GET "/" for ::1 at 2024-08-03 13:02:34 +0100
+I, [2024-08-03T13:02:34.509070 #59345]  INFO -- : Processing by ComicsController#index as */*
+D, [2024-08-03T13:02:34.514005 #59345] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-03T13:02:34.514144 #59345] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+D, [2024-08-03T13:02:34.515766 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Marvel Previews (2017)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.516200 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.517558 #59345] DEBUG -- :   [1m[36mCACHE Comic Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Marvel Previews (2017)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.522564 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.523910 #59345] DEBUG -- :   [1m[36mCACHE Comic Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Marvel Previews (2017)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.524639 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.525868 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #10 (MARVEL KNIGHTS)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.526270 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.527754 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ultimate Spider-Man (2000) #110 (Mark Bagley Variant)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.528291 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.529874 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #12 (SPIDER-MAN)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.530561 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.531768 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "The Stand: American Nightmares HC (Hardcover)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.532165 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.533531 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #1"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.534091 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.535431 #59345] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #14 (FANTASTIC FOUR)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.536261 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.537666 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #9 (THE WOMEN OF MARVEL)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.538080 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.539262 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Hedge Knight II: Sworn Sword (2007) #1 (Yu Variant)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.539662 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.540799 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #11 (X-MEN - AGE OF APOCALYPSE)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.541455 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.542589 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Official Handbook of the Marvel Universe (2004) #13 (TEAMS)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.542997 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.544090 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB (Trade Paperback)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.544474 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.545816 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #4"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.546488 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.547580 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Gun Theory (2003) #4"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.547954 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.549016 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Silver Surfer (1987)"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.549404 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.550488 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #3"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.551114 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.552191 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Ant-Man (2003) #2"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.552570 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-03T13:02:34.553742 #59345] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."title" = ? LIMIT ?[0m  [["title", "Startling Stories: The Incorrigible Hulk (2004) #1"], ["LIMIT", 1]]
+D, [2024-08-03T13:02:34.554132 #59345] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+I, [2024-08-03T13:02:34.554994 #59345]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 40.7ms | Allocations: 14907)
+I, [2024-08-03T13:02:34.560918 #59345]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-03T13:02:34.561491 #59345]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 18359)
+I, [2024-08-03T13:02:34.572567 #59345]  INFO -- : Completed 200 OK in 53ms (Views: 45.8ms | ActiveRecord: 2.4ms | Allocations: 21311)
+
+
+D, [2024-08-03T16:03:12.652531 #62484] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-03T16:03:12.652646 #62484]  INFO -- : [dotenv] Loaded [33m.env[0m
+I, [2024-08-03T16:03:17.836519 #62484]  INFO -- : Started GET "/" for ::1 at 2024-08-03 16:03:17 +0100
+D, [2024-08-03T16:03:17.842222 #62484] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2024-08-03T16:03:17.870462 #62484] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2024-08-03T16:03:17.915109 #62484]  INFO -- : Processing by ComicsController#index as HTML
+E, [2024-08-03T16:09:20.965649 #62484] ERROR -- : MarvelApi error: Net::ReadTimeout with #<TCPSocket:(closed)>
+D, [2024-08-03T16:09:20.984871 #62484] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-03T16:09:20.985003 #62484] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+I, [2024-08-03T16:09:20.988276 #62484]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1950)
+I, [2024-08-03T16:09:21.012669 #62484]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-03T16:09:21.013907 #62484]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 8581)
+I, [2024-08-03T16:09:21.014508 #62484]  INFO -- : Completed 200 OK in 363099ms (Views: 35.5ms | ActiveRecord: 0.0ms | Allocations: 21005)
+
+
+I, [2024-08-03T16:09:23.447193 #62484]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-03 16:09:23 +0100
+F, [2024-08-03T16:09:23.450153 #62484] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+I, [2024-08-03T16:10:02.482068 #62484]  INFO -- : Started GET "/" for ::1 at 2024-08-03 16:10:02 +0100
+I, [2024-08-03T16:10:02.483276 #62484]  INFO -- : Processing by ComicsController#index as HTML
+E, [2024-08-03T16:16:05.503263 #62484] ERROR -- : MarvelApi error: Net::ReadTimeout with #<TCPSocket:(closed)>
+D, [2024-08-03T16:16:05.503762 #62484] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-03T16:16:05.503864 #62484] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+I, [2024-08-03T16:16:05.504506 #62484]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 712)
+I, [2024-08-03T16:16:05.517586 #62484]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-03T16:16:05.518102 #62484]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4292)
+I, [2024-08-03T16:16:05.518398 #62484]  INFO -- : Completed 200 OK in 363035ms (Views: 14.7ms | Allocations: 10585)
+
+
+I, [2024-08-03T16:16:07.775696 #62484]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-03 16:16:07 +0100
+F, [2024-08-03T16:16:07.776784 #62484] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+I, [2024-08-03T16:57:10.760431 #62484]  INFO -- : Started GET "/" for ::1 at 2024-08-03 16:57:10 +0100
+I, [2024-08-03T16:57:10.818985 #62484]  INFO -- : Processing by ComicsController#index as HTML
+D, [2024-08-03T17:01:12.366910 #62484] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-03T17:01:12.367043 #62484] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+I, [2024-08-03T17:01:12.368435 #62484]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1410)
+I, [2024-08-03T17:01:12.381283 #62484]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-03T17:01:12.382131 #62484]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5265)
+I, [2024-08-03T17:01:12.382526 #62484]  INFO -- : Completed 200 OK in 241563ms (Views: 18.4ms | Allocations: 26984)
+
+
+I, [2024-08-03T17:01:14.741327 #62484]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-03 17:01:14 +0100
+F, [2024-08-03T17:01:14.742411 #62484] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+D, [2024-08-03T17:15:25.829854 #65126] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-03T17:15:25.829942 #65126]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-03T17:17:32.747574 #65341] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-03T17:17:32.747651 #65341]  INFO -- : [dotenv] Loaded [33m.env[0m
