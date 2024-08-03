@@ -61,7 +61,6 @@ class MarvelApi
 
   def handle_response(response)
     parsed_response = response.parsed_response
-    puts parsed_response.inspect
     if response.code == 200 && parsed_response['data']
       parsed_response
     else

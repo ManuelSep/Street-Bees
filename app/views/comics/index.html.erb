@@ -7,7 +7,7 @@
     <% end %>
   </div>
   <% unless !@character_comics.present? && @character_comics == false %>
-    <% if @character_name.is_a?(Hash) %>
+    <% if @character_comics.is_a?(Hash) || @character_comics.is_a?(Array) %>
       <h3><%= @character_name %></h3>
       <div class="comics-grid">
         <% @character_comics.each do |comic| %>
@@ -26,16 +26,11 @@
           <div class="comic-item">
             <h3><%= comic['title'] %></h3>
             <img src="<%= "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}" %>" alt="<%= comic['title'] %>">
-            <% if Comic.exists?(title: comic['title']) %>
-              <% db_comic = Comic.find_by(title: comic['title']) %>
+            <% if Comic.exists?(marvel_id: comic['id']) %>
+              <% db_comic = Comic.find_by(marvel_id: comic['id']) %>
               <div>
-                <p>Upvotes: <%= db_comic.upvotes %></p>
-                <%#= button_to 'Upvote', upvote_comic_path(db_comic), method: :post, class: 'btn btn-primary' %>
+                <p>Upvotes: <%= db_comic.present? ? db_comic.upvotes : 0 %></p>
                 <%= button_to 'Upvote', upvote_comic_path(comic['id'], title: comic['title'], cover_url: "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}"), method: :post %>
-              </div>
-            <% else %>
-              <div>
-                <p>Upvotes: 0</p>
               </div>
             <% end %>
           </div>
