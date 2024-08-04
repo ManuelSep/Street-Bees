@@ -6549,3 +6549,192 @@ D, [2024-08-04T10:23:32.588024 #81285] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLI
 I, [2024-08-04T10:23:32.588130 #81285]  INFO -- : [dotenv] Loaded [33m.env[0m
 D, [2024-08-04T10:26:01.454654 #81503] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
 I, [2024-08-04T10:26:01.454763 #81503]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:02:09.830060 #87295] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:02:09.831123 #87295]  INFO -- : [dotenv] Loaded [33m.env[0m
+I, [2024-08-04T19:02:15.977239 #87295]  INFO -- : Started GET "/comics?character_name=&commit=Search" for ::1 at 2024-08-04 19:02:15 +0100
+D, [2024-08-04T19:02:15.984153 #87295] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2024-08-04T19:02:16.015700 #87295] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2024-08-04T19:02:16.033061 #87295]  INFO -- : Processing by ComicsController#index as HTML
+I, [2024-08-04T19:02:16.033338 #87295]  INFO -- :   Parameters: {"character_name"=>"", "commit"=>"Search"}
+E, [2024-08-04T19:08:19.084977 #87295] ERROR -- : MarvelApi error: Net::ReadTimeout with #<TCPSocket:(closed)>
+D, [2024-08-04T19:08:19.102334 #87295] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-04T19:08:19.102562 #87295] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+I, [2024-08-04T19:08:19.106994 #87295]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1908)
+I, [2024-08-04T19:08:19.159586 #87295]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-04T19:08:19.160268 #87295]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 8542)
+I, [2024-08-04T19:08:19.160933 #87295]  INFO -- : Completed 200 OK in 363127ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 20749)
+
+
+I, [2024-08-04T19:08:22.291399 #87295]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-04 19:08:22 +0100
+F, [2024-08-04T19:08:22.294920 #87295] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+I, [2024-08-04T19:11:39.741158 #87295]  INFO -- : Started GET "/comics?character_name=&commit=Search" for ::1 at 2024-08-04 19:11:39 +0100
+I, [2024-08-04T19:11:39.797965 #87295]  INFO -- : Processing by ComicsController#index as HTML
+I, [2024-08-04T19:11:39.798044 #87295]  INFO -- :   Parameters: {"character_name"=>"", "commit"=>"Search"}
+D, [2024-08-04T19:12:40.134508 #87295] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-04T19:12:40.134772 #87295] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+D, [2024-08-04T19:12:40.149519 #87295] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2024-08-04T19:12:40.150196 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.153771 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 82967], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.154210 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.155873 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 82967], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.156315 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.164077 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 82965], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.164539 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.165771 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 82965], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.166163 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.167771 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 82970], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.168206 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.169230 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 82970], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.169680 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.171682 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1689], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.172128 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.173119 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1689], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.173512 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.175023 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 15808], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.175438 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.176649 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 15808], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.177040 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.178506 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1886], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.178920 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.179979 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1886], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.180382 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.182217 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 26620], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.182652 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.183618 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 26620], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.184012 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.185631 #87295] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 291], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.186273 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.187259 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 291], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.187655 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.189181 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 2088], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.189917 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.191994 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 2088], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.192627 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.194493 #87295] DEBUG -- :   [1m[36mComic Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1590], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.194943 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.196069 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1590], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.196505 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.198385 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 15878], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.198820 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.199797 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 15878], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.200202 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.202205 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1749], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.202727 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.204027 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1749], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.204457 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.206102 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1994], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.206530 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.207478 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1994], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.207875 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.209627 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1158], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.210150 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.211167 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 1158], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.211574 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.213121 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 428], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.213842 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.214821 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 428], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.215215 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.216824 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 331], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.217249 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.218223 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 331], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.218977 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.220482 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 15094], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.220907 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.221871 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 15094], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.222282 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.224236 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 376], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.224679 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.225632 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 376], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.226034 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.227988 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 323], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.228603 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.230301 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 323], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.230736 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+D, [2024-08-04T19:12:40.232361 #87295] DEBUG -- :   [1m[36mComic Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 183], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.232769 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:29
+D, [2024-08-04T19:12:40.233709 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? LIMIT ?[0m  [["marvel_id", 183], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.234119 #87295] DEBUG -- :   ↳ app/views/comics/index.html.erb:30
+I, [2024-08-04T19:12:40.235690 #87295]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 100.7ms | Allocations: 41234)
+I, [2024-08-04T19:12:40.241793 #87295]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+I, [2024-08-04T19:12:40.242336 #87295]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 44893)
+D, [2024-08-04T19:12:40.243426 #87295] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 82967], ["title", "Marvel Previews (2017)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.244069 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.245259 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 82965], ["title", "Marvel Previews (2017)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.245660 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.246793 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 82970], ["title", "Marvel Previews (2017)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/80/5e3d7536c8ada.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.247192 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.248363 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1689], ["title", "Official Handbook of the Marvel Universe (2004) #10 (MARVEL KNIGHTS)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/30/4bc64df4105b9.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.248915 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.250026 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 15808], ["title", "Ultimate Spider-Man (2000) #110 (Mark Bagley Variant)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/4bc4947ea8f4d.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.250417 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.251513 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1886], ["title", "Official Handbook of the Marvel Universe (2004) #12 (SPIDER-MAN)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/4bc64020a4ccc.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.251908 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.253003 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 26620], ["title", "The Stand: American Nightmares HC (Hardcover)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/00/4bb4c3523c46f.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.253505 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.254611 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 291], ["title", "Ant-Man (2003) #1"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/6/e0/4bc6a2497684e.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.254997 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.256091 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 2088], ["title", "Official Handbook of the Marvel Universe (2004) #14 (FANTASTIC FOUR)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/90/4bc6353e5fc56.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.256485 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.257761 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1590], ["title", "Official Handbook of the Marvel Universe (2004) #9 (THE WOMEN OF MARVEL)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/4c7d666c0e58a.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.258318 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.259438 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 15878], ["title", "Hedge Knight II: Sworn Sword (2007) #1 (Yu Variant)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4bc49463dad62.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.259829 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.261001 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1749], ["title", "Official Handbook of the Marvel Universe (2004) #11 (X-MEN - AGE OF APOCALYPSE)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/b0/4bc6494ed6eb4.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.261401 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.262502 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1994], ["title", "Official Handbook of the Marvel Universe (2004) #13 (TEAMS)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc63a47b8dcb.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.262894 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.264105 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1158], ["title", "ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB (Trade Paperback)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/2/f0/4bc6670c80007.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.264493 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.265573 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 428], ["title", "Ant-Man (2003) #4"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/4/20/4bc697c680890.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.265968 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.267061 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 331], ["title", "Gun Theory (2003) #4"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/60/4bc69f11baf75.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.267456 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.268953 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 15094], ["title", "Silver Surfer (1987)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.269432 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.270637 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 376], ["title", "Ant-Man (2003) #3"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/d/70/4bc69c7e9b9d7.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.271039 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.272172 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 323], ["title", "Ant-Man (2003) #2"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc69f33cafc0.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.272567 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-04T19:12:40.273817 #87295] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 183], ["title", "Startling Stories: The Incorrigible Hulk (2004) #1"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-04T19:12:40.274225 #87295] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+I, [2024-08-04T19:12:40.275023 #87295]  INFO -- : Completed 200 OK in 60477ms (Views: 109.1ms | ActiveRecord: 7.5ms | Allocations: 70358)
+
+
+I, [2024-08-04T19:12:44.437604 #87295]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-04 19:12:44 +0100
+F, [2024-08-04T19:12:44.438721 #87295] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+D, [2024-08-04T19:18:58.597621 #87981] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:18:58.597804 #87981]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:19:55.175954 #88074] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:19:55.176058 #88074]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:20:03.484501 #88095] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:20:03.484611 #88095]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:20:21.597182 #88117] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:20:21.597291 #88117]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:26:24.557455 #88316] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:26:24.557900 #88316]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:27:06.424793 #88365] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:27:06.424902 #88365]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:47:52.715243 #89100] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:47:52.716528 #89100]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:48:25.771888 #89148] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:48:25.771988 #89148]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:48:41.443226 #89180] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:48:41.443324 #89180]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:52:12.793664 #89388] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:52:12.793756 #89388]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:52:17.389847 #89410] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:52:17.389937 #89410]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:52:22.191035 #89419] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:52:22.191122 #89419]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:52:41.811882 #89444] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:52:41.811977 #89444]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:57:24.763716 #89675] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:57:24.763812 #89675]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:57:34.614747 #89706] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:57:34.614837 #89706]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T19:57:37.846878 #89736] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T19:57:37.846969 #89736]  INFO -- : [dotenv] Loaded [33m.env[0m

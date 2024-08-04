@@ -1,4 +1,3 @@
-# spec/services/marvel_api_spec.rb
 require 'rails_helper'
 
 RSpec.describe MarvelApi do

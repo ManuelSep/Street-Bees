@@ -6,7 +6,7 @@ class ComicsController < ApplicationController
     @character_name = params[:character_name]
 
     begin
-      if @character_name.present?
+      if @character_name.present? && !@character_name.empty?
         characters = MarvelApi.new.search_comics_by_character(@character_name)
         characters['data']['results'].each do |character|
           if character['name'] == @character_name

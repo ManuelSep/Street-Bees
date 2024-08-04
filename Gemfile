@@ -29,6 +29,7 @@ gem 'httparty'  # To make HTTP requests to the Marvel API
 gem 'dotenv-rails'  # To manage environment variables
 gem 'bootstrap', '~> 5.1'  # For styling
 gem 'retryable'
+gem 'rack-attack'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
