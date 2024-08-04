@@ -6537,3 +6537,15 @@ I, [2024-08-04T00:55:50.063956 #76524]  INFO -- : Started GET "/serviceworker.js
 F, [2024-08-04T00:55:50.065041 #76524] FATAL -- :   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
+D, [2024-08-04T10:17:21.915385 #80820] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T10:17:21.915823 #80820]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T10:23:08.114074 #81237] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T10:23:08.114181 #81237]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T10:23:10.543141 #81255] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T10:23:10.543287 #81255]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T10:23:29.202212 #81279] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T10:23:29.202321 #81279]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T10:23:32.588024 #81285] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T10:23:32.588130 #81285]  INFO -- : [dotenv] Loaded [33m.env[0m
+D, [2024-08-04T10:26:01.454654 #81503] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-04T10:26:01.454763 #81503]  INFO -- : [dotenv] Loaded [33m.env[0m
