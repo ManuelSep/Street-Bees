@@ -2,7 +2,7 @@
 
 # Comics App
 
-A simple Ruby on Rails application to browse Marvel comic books using the Marvel API. Users can search comics by character and upvote their favorite comics.
+A Ruby on Rails application to browse Marvel comic books using the Marvel API. Users can search comics by character and upvote their favorite comics.
 
 ## Requirements
 
@@ -55,9 +55,9 @@ bundle exec rspec
 ```
 ## Notes
 
-- To deal with external API rate limiting i used Rack::Attack that limits the request for a specified time
-- To boost performance and have less request sidekiq or delayed_jobs could be used too
-- For performance i implemented the Rails built-in memory_store.
-- I did not implement user management and authentication but i would have used the devise because that is the one i am most used to.
+- To deal with external API rate limiting Rack::Attack is used, it limits the request for a specified time.
+- To boost performance and have less requests sidekiq or delayed_jobs could be used too.
+- For performance the Rails built-in memory_store was implemented.
+- User management and authentication was not implemented but it would have been used the devise.
 
 
