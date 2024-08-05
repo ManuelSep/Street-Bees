@@ -1,0 +1,13 @@
+<div class="bg-danger py-3">
+  <div class="container text-center pb-2">
+    <img src="assets/marvel_logo.png" class="py-1">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <%= form_with url: comics_path, method: :get, local: true, class: "d-flex justify-content-center" do |form| %>
+          <%= form.text_field :character_name, placeholder: 'Enter character name', class: "form-control me-2" %>
+          <%= form.submit 'Search', class: "visually-hidden" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

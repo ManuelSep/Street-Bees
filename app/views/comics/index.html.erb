@@ -1,11 +1,5 @@
-<div class="container">
-  <h1>Marvel Comics</h1>
-  <div class="mb-2">
-    <%= form_with url: comics_path, method: :get, local: true do |form| %>
-      <%= form.text_field :character_name, placeholder: 'Enter character name' %>
-      <%= form.submit 'Search' %>
-    <% end %>
-  </div>
+<div class="container text-center mt-5">
+  <%#= render 'search_form' %>
   <% unless !@character_comics.present? && @character_comics == false %>
     <% if @character_comics.is_a?(Hash) || @character_comics.is_a?(Array) %>
       <h3><%= @character_name %></h3>
@@ -24,15 +18,13 @@
       <div class="comics-grid">
         <% @comics['data']['results'].each do |comic| %>
           <div class="comic-item">
-            <h3><%= comic['title'] %></h3>
+            <div class="heart-icon">
+              <%= image_tag 'heart_empty.png', class: 'heart', data: { comic_id: comic['id'], liked: false } %>
+            </div>
             <img src="<%= "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}" %>" alt="<%= comic['title'] %>">
-            <% if Comic.exists?(marvel_id: comic['id']) %>
-              <% db_comic = Comic.find_by(marvel_id: comic['id']) %>
-              <div>
-                <p>Upvotes: <%= db_comic.present? ? db_comic.upvotes : 0 %></p>
-                <%= button_to 'Upvote', upvote_comic_path(comic['id'], title: comic['title'], cover_url: "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}"), method: :post %>
-              </div>
-            <% end %>
+            <div class="comic-title">
+              <h3><%= comic['title'] %></h3>
+            </div>
           </div>
         <% end %>
       </div>
