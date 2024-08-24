@@ -1,5 +1,3 @@
-# README
-
 # Comics App
 
 A Ruby on Rails application to browse Marvel comic books using the Marvel API. Users can search comics by character and upvote their favorite comics.
