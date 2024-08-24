@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const heart = event.target;
       const isLiked = heart.dataset.liked === 'true';
       console.log("Heart clicked, current state:", isLiked);
-      const newSrc = isLiked ? '/assets/heart_empty.png' : '/assets/heart_full.png';
+      const newSrc = isLiked ? '/assets/heart_off.png' : '/assets/heart_on.png';
       heart.src = newSrc;
       heart.dataset.liked = !isLiked;
       console.log("New state:", heart.dataset.liked);

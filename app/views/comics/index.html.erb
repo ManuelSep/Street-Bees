@@ -19,7 +19,7 @@
         <% @comics['data']['results'].each do |comic| %>
           <div class="comic-item">
             <div class="heart-icon">
-              <%= image_tag 'heart_empty.png', class: 'heart', data: { comic_id: comic['id'], liked: false } %>
+              <%= image_tag 'heart_off.png', class: 'heart', data: { comic_id: comic['id'], liked: false } %>
             </div>
             <img src="<%= "#{comic['thumbnail']['path']}.#{comic['thumbnail']['extension']}" %>" alt="<%= comic['title'] %>">
             <div class="comic-title">

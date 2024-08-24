@@ -13877,3 +13877,64 @@ I, [2024-08-05T00:48:59.701467 #3941]  INFO -- : Started GET "/serviceworker.js"
 F, [2024-08-05T00:48:59.702571 #3941] FATAL -- :   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
+D, [2024-08-05T12:26:19.568239 #2491] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-05T12:26:19.569144 #2491]  INFO -- : [dotenv] Loaded [33m.env[0m
+I, [2024-08-05T12:26:23.609461 #2491]  INFO -- : Started GET "/" for ::1 at 2024-08-05 12:26:23 +0100
+D, [2024-08-05T12:26:23.625575 #2491] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2024-08-05T12:26:23.666431 #2491] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2024-08-05T12:26:23.686528 #2491]  INFO -- : Processing by ComicsController#index as HTML
+D, [2024-08-05T12:27:23.602897 #2491] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-08-05T12:27:23.603059 #2491] DEBUG -- :   Rendering comics/index.html.erb within layouts/application
+I, [2024-08-05T12:27:23.660937 #2491]  INFO -- :   Rendered comics/index.html.erb within layouts/application (Duration: 57.7ms | Allocations: 16035)
+I, [2024-08-05T12:27:23.681725 #2491]  INFO -- : [Webpacker] Everything's up-to-date. Nothing to do
+D, [2024-08-05T12:27:23.688242 #2491] DEBUG -- :   Rendered comics/_search_form.html.erb (Duration: 4.0ms | Allocations: 1263)
+I, [2024-08-05T12:27:23.688582 #2491]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 25142)
+D, [2024-08-05T12:27:23.697599 #2491] DEBUG -- :   [1m[36mComic Load (0.6ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 82967], ["title", "Marvel Previews (2017)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.698362 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.723681 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 82965], ["title", "Marvel Previews (2017)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.725040 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.727219 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 82970], ["title", "Marvel Previews (2017)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/80/5e3d7536c8ada.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.727928 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.729844 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1689], ["title", "Official Handbook of the Marvel Universe (2004) #10 (MARVEL KNIGHTS)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/30/4bc64df4105b9.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.730547 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.732449 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 15808], ["title", "Ultimate Spider-Man (2000) #110 (Mark Bagley Variant)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/4bc4947ea8f4d.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.733125 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.735505 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1886], ["title", "Official Handbook of the Marvel Universe (2004) #12 (SPIDER-MAN)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/4bc64020a4ccc.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.736240 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.738173 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 26620], ["title", "The Stand: American Nightmares HC (Hardcover)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/00/4bb4c3523c46f.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.775664 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.778277 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 291], ["title", "Ant-Man (2003) #1"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/6/e0/4bc6a2497684e.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.779471 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.781697 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 2088], ["title", "Official Handbook of the Marvel Universe (2004) #14 (FANTASTIC FOUR)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/90/4bc6353e5fc56.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.782428 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.784610 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1590], ["title", "Official Handbook of the Marvel Universe (2004) #9 (THE WOMEN OF MARVEL)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/4c7d666c0e58a.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.785317 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.786960 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 15878], ["title", "Hedge Knight II: Sworn Sword (2007) #1 (Yu Variant)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4bc49463dad62.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.787586 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.788747 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1749], ["title", "Official Handbook of the Marvel Universe (2004) #11 (X-MEN - AGE OF APOCALYPSE)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/b0/4bc6494ed6eb4.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.825298 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.828012 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1994], ["title", "Official Handbook of the Marvel Universe (2004) #13 (TEAMS)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc63a47b8dcb.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.828700 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.830715 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 1158], ["title", "ULTIMATE X-MEN VOL. 5: ULTIMATE WAR TPB (Trade Paperback)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/2/f0/4bc6670c80007.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.831899 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.834052 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 428], ["title", "Ant-Man (2003) #4"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/4/20/4bc697c680890.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.834768 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.836765 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 331], ["title", "Gun Theory (2003) #4"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/c/60/4bc69f11baf75.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.837214 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.838547 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 15094], ["title", "Silver Surfer (1987)"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.839215 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.873709 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 376], ["title", "Ant-Man (2003) #3"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/d/70/4bc69c7e9b9d7.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.874794 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.877417 #2491] DEBUG -- :   [1m[36mComic Load (0.2ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 323], ["title", "Ant-Man (2003) #2"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc69f33cafc0.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.878194 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+D, [2024-08-05T12:27:23.879822 #2491] DEBUG -- :   [1m[36mComic Load (0.1ms)[0m  [1m[34mSELECT "comics".* FROM "comics" WHERE "comics"."marvel_id" = ? AND "comics"."title" = ? AND "comics"."cover_url" = ? LIMIT ?[0m  [["marvel_id", 183], ["title", "Startling Stories: The Incorrigible Hulk (2004) #1"], ["cover_url", "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"], ["LIMIT", 1]]
+D, [2024-08-05T12:27:23.880632 #2491] DEBUG -- :   ↳ app/controllers/comics_controller.rb:53:in `block in save_comics'
+I, [2024-08-05T12:27:23.881981 #2491]  INFO -- : Completed 200 OK in 60195ms (Views: 91.8ms | ActiveRecord: 4.3ms | Allocations: 61947)
+
+
+I, [2024-08-05T12:27:27.014903 #2491]  INFO -- : Started GET "/serviceworker.js" for ::1 at 2024-08-05 12:27:27 +0100
+F, [2024-08-05T12:27:27.018257 #2491] FATAL -- :   
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+D, [2024-08-24T08:32:09.971089 #64680] DEBUG -- : [dotenv] Set [36mMARVEL_PUBLIC_KEY[0m and [36mMARVEL_PRIVATE_KEY[0m
+I, [2024-08-24T08:32:09.971555 #64680]  INFO -- : [dotenv] Loaded [33m.env[0m
